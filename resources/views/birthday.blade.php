@@ -9,7 +9,7 @@
     <script src="../js/app.js"></script>
 </head>
 
-<body style="background-color: red; color:white">
+<body style="background-color: green; color:white">
     <p id="greeting">hsosossllsfjkls</p>
 </body>
 
