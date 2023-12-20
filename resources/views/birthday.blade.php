@@ -11,8 +11,8 @@
 
 <body style="background-color: green; color:white">
     <p id="greeting">hsosossllsfjkls</p>
-</body>
-<script>
+    
+    <script>
     console.log('holla')
     function updatePost(){
         const socket = new WebSocket(`ws://${window.location.hostname}:6001/connect`)
@@ -22,5 +22,7 @@
     }
     updatePost();
     </script>
+</body>
+
 
 </html>
