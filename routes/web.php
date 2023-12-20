@@ -25,6 +25,9 @@ Route::get('/', function () {
 // });
 WebSocketsRouter::webSocket('/connect', UpdateDataSocketHandler::class);
 
+Route::get('color/worker', function () {
+    return view('birthday');
+});
 Route::get('make/find', function () {
     return event(new latestBroadcast());
 });
