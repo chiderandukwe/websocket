@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('send/event', function (Request $request) {
     event(new latestBroadcast());
-    return response()->json('workde',200);
+    return response()->json('workde', 200);
 });
