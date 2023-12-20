@@ -12,14 +12,15 @@
 <body style="background-color: green; color:white">
     <p id="greeting">hsosossllsfjkls</p>
 </body>
-<script src="../js/app.js">
-    
+<script>
+    console.log('holla')
     function updatePost(){
         const socket = new WebSocket(`ws://${window.location.hostname}:6001/connect`)
         socket.onopen = function(evnet:Event){
             console.log('on open')
         }
     }
+    updatePost();
     </script>
 
 </html>
