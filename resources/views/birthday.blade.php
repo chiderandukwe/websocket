@@ -10,7 +10,7 @@
 </head>
 
 <body style="background-color: red; color:white">
-    <p class="greeting">hsosossllsfjkls</p>
+    <p id="greeting">hsosossllsfjkls</p>
 </body>
 
 </html>

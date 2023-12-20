@@ -1,2 +1,3 @@
 import './bootstrap';
-const greet = document.getElementsByClassName('greeting').innerText = "vuejs"
+
+document.getElementById('greeting').innerText = "vuejs"
