@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Holla</title>
-    <script src="../js/app.js"></script>
+    
 </head>
 
 <body style="background-color: green; color:white">
     <p id="greeting">hsosossllsfjkls</p>
 </body>
+<script src="../js/app.js">
+    
+    function updatePost(){
+        const socket = new WebSocket(`ws://${window.location.hostname}:6001/connect`)
+        socket.onopen = function(evnet:Event){
+            console.log('on open')
+        }
+    }
+    </script>
 
 </html>
