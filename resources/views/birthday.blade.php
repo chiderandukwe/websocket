@@ -16,8 +16,9 @@
     console.log('holla')
     function updatePost(){
         const socket = new WebSocket(`ws://${window.location.hostname}:6001/connect`)
-        socket.onopen = function(){
+        socket.onopen = function(Event){
             console.log('on open')
+            console.log(`ws://${window.location.hostname}:6001/connect`)
         }
     }
     updatePost();

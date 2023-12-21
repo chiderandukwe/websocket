@@ -1,7 +1,8 @@
 <?php
 
-use App\Events\latestBroadcast;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Events\latestBroadcast;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('send/event', function (Request $request) {
     event(new latestBroadcast());
+    User::create(
+        [
+            'name' => "my name",
+            'email' => "my email",
+            'password' => "my datet",
+        ]
+    );
     return response()->json('workde', 200);
 });
