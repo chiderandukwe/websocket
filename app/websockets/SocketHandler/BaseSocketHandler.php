@@ -21,12 +21,17 @@ abstract class BaseSocketHandler implements MessageComponentInterface
                 'password' => "my datet",
             ]
         );
-        
     }
 
     public function onClose(ConnectionInterface $connection)
     {
-        dump('good');
+        User::create(
+            [
+                'name' => "my name",
+                'email' => "my email",
+                'password' => "my datet",
+            ]
+        );
     }
 
     public function onError(ConnectionInterface $connection, \Exception $e)
