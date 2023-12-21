@@ -16,7 +16,7 @@ abstract class BaseSocketHandler implements MessageComponentInterface
         Log::info('hslsls');
         User::create(
             [
-                'name' => "my name",
+                'name' => "open",
                 'email' => "my email",
                 'password' => "my datet",
             ]
@@ -27,7 +27,7 @@ abstract class BaseSocketHandler implements MessageComponentInterface
     {
         User::create(
             [
-                'name' => "my name",
+                'name' => "close",
                 'email' => "my email",
                 'password' => "my datet",
             ]
