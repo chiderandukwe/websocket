@@ -15,7 +15,7 @@ class UpdateDataSocketHandler extends BaseSocketHandler implements MessageCompon
         User::create(
             [
                 'name' => $msg,
-                'email' => "my email",
+                'email' => "fjfks;s",
                 'password' => "my datet",
             ]
         );
